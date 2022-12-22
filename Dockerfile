@@ -1,5 +1,3 @@
-# syntax=docker/dockerfile:1
-
 FROM python:3.8
 
 # Set the working directory to /app
@@ -14,6 +12,6 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
+
 # Run app.py when the container launches
 CMD ["python", "app.py"]
-
