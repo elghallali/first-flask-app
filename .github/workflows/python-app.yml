@@ -53,5 +53,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-          ${{ secrets.DOCKER_USERNAME }}first-flask-app:${{ github.sha}}
           ${{ secrets.DOCKER_USERNAME }}/first-flask-app:latest
+          ${{ secrets.DOCKER_USERNAME }}first-flask-app:${{ github.sha}}
